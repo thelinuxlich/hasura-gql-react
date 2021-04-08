@@ -1,0 +1,7 @@
+table:
+  name: tasks
+  schema: public
+object_relationships:
+- name: list
+  using:
+    foreign_key_constraint_on: list_id

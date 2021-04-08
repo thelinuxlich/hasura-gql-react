@@ -1,0 +1,1 @@
+CREATE TABLE "public"."tasks" ("id" serial NOT NULL, "name" text NOT NULL, "details" jsonb NOT NULL, "list_id" integer NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("list_id") REFERENCES "public"."lists"("id") ON UPDATE restrict ON DELETE restrict);

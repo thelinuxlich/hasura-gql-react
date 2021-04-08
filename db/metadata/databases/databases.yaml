@@ -1,0 +1,8 @@
+- name: todo
+  kind: postgres
+  configuration:
+    connection_info:
+      database_url: postgres://postgres:postgrespassword@postgres:5432/postgres
+      pool_settings: {}
+  tables: "!include todo/tables/tables.yaml"
+  functions: "!include todo/functions/functions.yaml"
